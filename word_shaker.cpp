@@ -55,30 +55,7 @@ int main()
 
     }while(!isWin);
 
-    //writing score to the  file
-    ofstream file("C:/Users/Yanis/Desktop/cppT.txt", ios::app);
-    if(file)
-    {
-        file << gameTurn << endl;
-    }
-
-    cout << "YOU  W I N by " << gameTurn ;
-
-    //read the score file
-    ifstream fileW("C:/Users/Yanis/Desktop/cppT.txt");
-    string score;
-    vector <string> scoreH;
-    while(getline(fileW, score))
-    {
-        int currentScore;
-        scoreH.push_back(score);
-    }
-
-    //display all stocked data
-    for(int i(0); i< scoreH.size();++i)
-    {
-        cout << scoreH[i] << endl;
-    }
+    cout << "YOU  W I N in " << gameTurn << "attemp(s)";
 
     return 0;
 }
